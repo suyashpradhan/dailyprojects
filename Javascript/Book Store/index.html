@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+
+    <div class="container container-card">
+        <h1 class="header ">Book Store</h1>
+        <form action="#" id="form">
+            <div class="form-group">
+                <label for="title">Book Title</label>
+                <input type="text" name="title" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="author">Book Author</label>
+                <input type="text" name="author" id="author" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="publication">Publication Name</label>
+                <input type="text" name="publication" id="publication" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="price">Price (in <i class="fas fa-rupee-sign fa-fw">)</i></label>
+                <input type="text" name="price" id="price" class="form-control">
+            </div>
+            <br>
+            <button id="submit" type="submit" class="btn btn-primary p-2 btn-center btn-block ">Add Book</button>
+        </form>
+    </div>
+
+    <table class="container-card table table-dark table-bordered book-table" id="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Book Title</th>
+                <th>Book Author</th>
+                <th>Publication</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+    </div>
+    <script src="https://kit.fontawesome.com/7fdc918442.js" crossorigin="anonymous"></script>
+    <script src="script.js"> </script>
+</body>
+
+</html>
