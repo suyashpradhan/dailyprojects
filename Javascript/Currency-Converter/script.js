@@ -4,10 +4,9 @@ const container = document.querySelector(".container");
 getRate.addEventListener("click", (e) => {
   fetch(
     "https://v1.nocodeapi.com/suyashpradhan/cx/TeoCYcoyaSJKNPQb/rates"
-  ).then((Response) => {
-    Response.json().then((data) => {
-      let dataObj = data.rates;
-      container.innerHTML = dataObj;
+  ).then((response) => {
+    response.json().then((data) => {
+      console.log(data.rates);
     });
   });
   e.preventDefault();
