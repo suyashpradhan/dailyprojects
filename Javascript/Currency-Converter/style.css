@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Poppins',
         sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -31,4 +32,11 @@ body {
 
 label {
     margin: 0;
+}
+
+.rate {
+    color: #333;
+    font-size: 1.1rem;
+    background-color: #f8f8f8;
+    padding: .4rem;
 }
