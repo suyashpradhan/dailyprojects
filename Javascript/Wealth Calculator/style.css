@@ -86,3 +86,16 @@ main {
     color: #181818 !important;
     font-weight: 600 !important;
 }
+
+.totalWealthWrapper {
+    background-color: #f8f8f8 !important;
+    padding: 2rem 1rem !important;
+    border: 1px solid #ccc !important;
+    margin-bottom: 0 !important;
+    border-radius: 5px;
+}
+
+.totalWealth {
+    margin: 0 !important;
+    font-size: 2rem;
+}
