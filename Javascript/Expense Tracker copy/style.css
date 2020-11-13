@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter',
+        sans-serif;
+}
+
+body {
+    font-family: 'Inter',
+        sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 0 0 1rem 0;
+    text-align: center;
+    color: #181818;
+    font-weight: 600;
+}
+
+label {
+    margin: 0;
+}
+
+
+header {
+    height: 28vh;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: #f8f8f8;
+}
+
+main {
+    height: calc(100vh - 28vh);
+    width: 100%;
+    padding: 2rem 0 0 0;
+    overflow: auto;
+    background-color: #f2f2f2;
+}
+
+
+.lyricsLists {
+    display: grid;
+    grid-template-columns: 130px 1fr auto;
+    align-items: flex-start;
+    grid-gap: .6rem;
+    border-bottom: 1px solid #ccc;
+    padding: 2rem 0;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin: 0 0 .4rem 0;
+    color: #181818;
+}
+
+.artistName {
+    font-size: 1rem;
+    margin: 0 0 .4rem 0;
+    color: #696969;
+}
+
+.image {
+    border-radius: 5px;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.lyricsBtn {
+    margin: 0;
+    padding: 1rem 2rem;
+    height: 2.8rem;
+    border-radius: 7px;
+    line-height: 2px;
+    background-color: #0070f3;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
+    color: white;
+    cursor: pointer;
+    border: 1px solid #0070f3;
+}
+
+.lyricsBtn:active,
+.lyricsBtn:focus {
+    outline: none;
+}
+
+audio {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-top: .7rem;
+}
+
+audio:active,
+audio:focus {
+    outline: none;
+}
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-container.active {
+    display: flex;
+}
+
+.popup {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    position: relative;
+    width: 500px;
+}
