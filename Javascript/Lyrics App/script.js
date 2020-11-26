@@ -4,6 +4,9 @@ const searchBtn = document.querySelector("#submit");
 const main = document.querySelector("main");
 const lyricsWrapper = document.querySelector(".lyricsWrapper");
 const actionWrapper = document.querySelector("#more");
+const popup = document.querySelector(".popup-container");
+const popupBody = document.querySelector(".popup-body");
+const closeBtn = document.querySelector("#close");
 
 //Empty Field
 let emptyField = (msg) => {
@@ -53,9 +56,8 @@ async function lyricsFunc(artistEl, songTitleEl) {
   let lyricsResponse = await response.json();
   let formattedLyrics = lyricsResponse.lyrics.replace(/(\r\n|\r|\n)/g, "<br>");
 
-  lyricsWrapper.innerHTML = `<h2><strong>${artistEl}</strong> - ${songTitleEl}</h2>
+  popupBody.innerHTML = `<h4><strong>${artistEl}</strong> - ${songTitleEl}</h2>
             <span>${formattedLyrics}</span>`;
-  console.log(formattedLyrics);
 }
 
 form.addEventListener("submit", (e) => {
@@ -78,7 +80,16 @@ lyricsWrapper.addEventListener("click", (e) => {
     const artistEl = targetedEl.getAttribute("data-artist");
     const songTitleEl = targetedEl.getAttribute("data-songTitle");
     lyricsFunc(artistEl, songTitleEl);
+    popup.classList.add("active");
   }
+  e.preventDefault();
+});
 
+//Close Modal Button
+lyricsWrapper.addEventListener("click", (e) => {
+  const targetedEl = e.target;
+  if (targetedEl.tagName === "BUTTON") {
+    popup.classList.add("active");
+  }
   e.preventDefault();
 });

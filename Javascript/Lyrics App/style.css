@@ -79,10 +79,13 @@ main {
     border-radius: 7px;
     line-height: 2px;
     background-color: #0070f3;
-    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
     color: white;
     cursor: pointer;
     border: 1px solid #0070f3;
+}
+
+.lyricsBtn:hover {
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.39);
 }
 
 .lyricsBtn:active,
@@ -121,7 +124,35 @@ audio:focus {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-    padding: 2rem;
+    padding: 1rem;
     position: relative;
     width: 500px;
+
+}
+
+.popup-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #dadce0;
+    margin-bottom: 1rem;
+}
+
+#close {
+    border: 1px solid #ff3943;
+    background-color: #ff3943;
+    color: #FFF;
+    padding: .6rem 1rem;
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 0 1rem 0;
+    cursor: pointer;
+}
+
+.popup-body {
+    height: 400px;
+    padding: .4rem 0;
+    overflow: auto;
 }
